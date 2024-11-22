@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de voyage solo avec des itinéraires personnalisés et des conseils pratiques.">
+    <title>Voyages Solo - Itinéraires Personnalisés</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #FF6347;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .section-title {
+            font-size: 28px;
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .itinerary-list, .service-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .itinerary-item, .service-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 45%;
+            transition: transform 0.3s ease;
+        }
+        .itinerary-item:hover, .service-box:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #FF6347;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .contact-form button {
+            background-color: #FF6347;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #e55347;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Voyages Solo - Itinéraires Personnalisés</h1>
+</header>
+
+<nav>
+    <a href="#itineraires">Itinéraires</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Itinéraires -->
+    <section id="itineraires">
+        <h2 class="section-title">Itinéraires de Voyage</h2>
+        <div class="itinerary-list">
+            <div class="itinerary-item">
+                <h3>Asie du Sud-Est : Un mois de découvertes</h3>
+                <p>Explorez les merveilles de la Thaïlande, du Vietnam, du Cambodge et du Laos en un mois, avec des conseils pratiques pour les voyageurs solo.</p>
+                <a href="#">Lire l'itinéraire complet</a>
+            </div>
+            <div class="itinerary-item">
+                <h3>Amérique du Sud : L'aventure au cœur des Andes</h3>
+                <p>Venez découvrir la culture incas et les paysages spectaculaires du Pérou, de la Bolivie et de l'Équateur en un itinéraire de 3 semaines.</p>
+                <a href="#">Lire l'itinéraire complet</a>
+            </div>
+            <!-- Ajoute d'autres itinéraires ici -->
+        </div>
+    </section>
+
+    <!-- Service de préparation d'itinéraires personnalisés -->
+    <section id="services">
+        <h2 class="section-title">Préparation d'Itinéraire Personnalisé</h2>
+        <div class="service-section">
+            <div class="service-box">
+                <h3>Service Premium</h3>
+                <p>Recevez un itinéraire sur-mesure, adapté à vos préférences de voyage, votre budget et votre durée. Je m'occupe de tout pour vous!</p>
+                <a href="#">En savoir plus</a>
+            </div>
+            <div class="service-box">
+                <h3>Consultation Gratuite</h3>
+                <p>Contactez-moi pour une consultation gratuite afin de discuter de vos projets de voyage et de vos attentes avant de réserver un service complet.</p>
+                <a href="#">Réserver une consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contactez-moi</h2>
+        <div class="contact-form">
+            <form action="mailto:votre-email@exemple.com" method="post" enctype="text/plain">
+                <input type="text" name="Nom" placeholder="Votre nom" required>
+                <input type="email" name="Email" placeholder="Votre email" required>
+                <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 Voyages Solo. Tous droits réservés.</p>
+    <p><a href="#">Politique de confidentialité</a> | <a href="#">Conditions d'utilisation</a></p>
+</footer>
+
+</body>
